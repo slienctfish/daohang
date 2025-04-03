@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个性化导航站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="nav-header">
+                <h2>我的网站收藏</h2>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="搜索网站...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <ul class="nav-list" id="categoryNav"></ul>
+        </nav>
+        <div class="main-content">
+            <main>
+            <section class="category" data-category="常用">
+                <h2>常用网站</h2>
+                <div class="sites-grid">
+                    <div class="site-card" data-title="GitHub" data-url="https://github.com">
+                        <div class="site-info">
+                            <h3>GitHub</h3>
+                            <p>全球最大的代码托管平台</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="Google" data-url="https://www.google.com">
+                        <div class="site-info">
+                            <h3>Google</h3>
+                            <p>全球最大的搜索引擎</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category" data-category="导航">                
+                <h2>导航网站</h2>
+                <div class="sites-grid">
+                    <div class="site-card" data-title="果汁排行榜" data-url="http://guozhivip.com/rank/">
+                        <div class="site-info">
+                            <h3>果汁排行榜</h3>
+                            <p>优质网站排行榜</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="优设导航" data-url="https://hao.uisdc.com/">
+                        <div class="site-info">
+                            <h3>优设导航</h3>
+                            <p>设计师网址导航</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="网盘资源导航" data-url="https://www.wowenda.com/">
+                        <div class="site-info">
+                            <h3>网盘资源导航</h3>
+                            <p>网盘资源整合导航</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="有趣网站之家" data-url="https://youquhome.com/">
+                        <div class="site-info">
+                            <h3>有趣网站之家</h3>
+                            <p>收录有趣的网站</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="考拉新媒体导航" data-url="https://www.kaolamedia.com/hot">
+                        <div class="site-info">
+                            <h3>考拉新媒体导航</h3>
+                            <p>新媒体人的导航站</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="AI导航站" data-url="https://www.ainav.cn/">
+                        <div class="site-info">
+                            <h3>AI导航站</h3>
+                            <p>AI工具导航</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="AI工具集" data-url="https://ai-bot.cn/">
+                        <div class="site-info">
+                            <h3>AI工具集</h3>
+                            <p>AI工具导航网站</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="大数据导航" data-url="http://hao.199it.com/">
+                        <div class="site-info">
+                            <h3>大数据导航</h3>
+                            <p>大数据工具导航</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category" data-category="新闻资讯">
+                <h2>新闻资讯</h2>
+                <div class="sites-grid">
+                    <div class="site-card" data-title="新榜" data-url="https://www.newrank.cn/">
+                        <div class="site-info">
+                            <h3>新榜</h3>
+                            <p>视频热点资讯</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="亿邦动力" data-url="https://www.ebrun.com/">
+                        <div class="site-info">
+                            <h3>亿邦动力</h3>
+                            <p>电商行业资讯</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="艾瑞网" data-url="https://www.iresearch.cn/">
+                        <div class="site-info">
+                            <h3>艾瑞网</h3>
+                            <p>互联网数据资讯</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="亿欧" data-url="https://www.iyiou.com/">
+                        <div class="site-info">
+                            <h3>亿欧</h3>
+                            <p>科技创新资讯</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="天下网商" data-url="https://www.tianxiawangshang.com/">
+                        <div class="site-info">
+                            <h3>天下网商</h3>
+                            <p>电商行业资讯</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category" data-category="工具">
+                <h2>实用工具</h2>
+                <div class="sites-grid">
+                    <div class="site-card" data-title="菜鸟工具" data-url="https://www.jyshare.com/">
+                        <div class="site-info">
+                            <h3>菜鸟工具</h3>
+                            <p>在线开发工具集</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="在线工具" data-url="https://tool.lu/">
+                        <div class="site-info">
+                            <h3>在线工具</h3>
+                            <p>程序员工具箱</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="知识导图" data-url="https://zhimap.com/gallery">
+                        <div class="site-info">
+                            <h3>知识导图</h3>
+                            <p>思维导图社区</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="GitMind" data-url="https://gitmind.cn/">
+                        <div class="site-info">
+                            <h3>GitMind</h3>
+                            <p>在线思维导图工具</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category" data-category="学习">
+                <h2>学习资源</h2>
+                <div class="sites-grid">
+                    <div class="site-card" data-title="MDN" data-url="https://developer.mozilla.org">
+                        <div class="site-info">
+                            <h3>MDN Web Docs</h3>
+                            <p>Web技术权威文档</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="果壳" data-url="https://www.guokr.com/">
+                        <div class="site-info">
+                            <h3>果壳</h3>
+                            <p>科普知识网站</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="医学微观" data-url="https://www.mvyxws.cn/">
+                        <div class="site-info">
+                            <h3>医学微观</h3>
+                            <p>医学知识科普</p>
+                        </div>
+                    </div>
+                    <div class="site-card" data-title="走读派" data-url="http://www.zoudupai.com/">
+                        <div class="site-info">
+                            <h3>走读派</h3>
+                            <p>电子书导航</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </main>
+        </div>
+            </main>
+        </div>
+    </div>
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
